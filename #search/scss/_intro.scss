@@ -1,0 +1,45 @@
+.intro {
+  margin-bottom: 70px;
+  &__container {
+    display: flex;
+    border-radius: 10px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    flex: 0 1 65%;
+    img {
+      width: 100%;
+      border-radius: 10px 0px 0px 10px;
+      @media (max-width: $tablet) {
+        border-radius: 10px 10px 0px 0px;
+      }
+    }
+  }
+
+  &__right {
+    flex: 0 1 35%;
+    background-color: #e3f1ff;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    @media (max-width: $tablet) {
+      border-radius: 0px 0px 10px 10px;
+    }
+    @media (max-width: $tablet) {
+      padding: 15px;
+    }
+  }
+
+  &__suptitle {
+    font-weight: 500;
+  }
+
+  &__title {
+    margin: 15px 0px;
+  }
+}

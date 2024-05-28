@@ -1,0 +1,291 @@
+$minwidth: 320px;
+$mw: 1230px;
+$laptop: 1360px;
+$md1: $mw + 12px;
+$md14: 1040px;
+$tablet: 992px;
+$mobile: 767px;
+$md4: 479.98px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1500;
+
+//======================================================================================================================
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  img {
+    display: none;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Made";
+  src: local("☺"), url("../fonts/made.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: local("☺"), url("../fonts/BebasNeue-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas-400";
+  src: local("☺"), url("../fonts/BebasNeue-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+//color
+$accent: #0234c7;
+$blue: #2452cc;
+$black: #1d1e20;
+$gray: #42494f;
+$white: #ffffff;
+$light: #e8eeff;
+$light-blue: #eaeaec;
+$light-gray: #aab1b7;
+$red: #c75757;
+$gray-bg: #e6e6e6;
+
+._par {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+._par-s {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+._h2 {
+  font-family: "Bebas";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+  color: $black;
+  @media (max-width: 1360px) {
+    font-size: 44px;
+  }
+}
+
+._h3 {
+  font-family: "Bebas-400";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+._h4 {
+  font-family: "Made";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+._h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  font-family: "Made";
+}
+mark {
+  all: initial;
+}
+
+._btn {
+  cursor: pointer;
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  background-color: $blue;
+  border-radius: 7px;
+
+  font-family: "Made";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $accent;
+  }
+
+  &._secondary {
+    border: 1px solid rgb(2, 52, 199);
+    color: $accent;
+    background-color: $white;
+    &:hover {
+      border: 1px solid $accent;
+      background-color: $accent;
+      color: $white;
+    }
+  }
+}
+
+._margin-b {
+  margin-bottom: 140px !important;
+  @media (max-width: 1360px) {
+    margin-bottom: 120px !important;
+  }
+  @media (max-width: $mobile) {
+    margin-bottom: 100px !important;
+  }
+}
+
+.to-top {
+  position: fixed;
+  left: 25px;
+  bottom: 20px;
+  border: 1.5px solid rgb(2, 52, 199);
+  /* white */
+  background: rgb(255, 255, 255);
+  opacity: 0.5;
+  width: 65px;
+  height: 65px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s;
+  z-index: 1000;
+  &.active {
+    display: flex;
+  }
+  svg {
+    g {
+      transition: all 0.3s;
+      path {
+        transition: all 0.3s;
+      }
+    }
+  }
+  &:hover {
+    background-color: $accent;
+    opacity: 1;
+    svg {
+      g {
+        opacity: 1;
+        path {
+          stroke: $white;
+        }
+        // g {
+        //   path {
+        //     stroke: $white;
+        //   }
+        // }
+      }
+    }
+  }
+}
+
+._pc {
+  display: flex;
+  @media (max-width: $laptop) {
+    display: none;
+  }
+}
+._laptop {
+  display: none;
+  @media (max-width: $laptop) {
+    display: flex;
+  }
+}
+.none {
+  display: none;
+}
+._label-wallet {
+  align-items: center;
+  display: inline-flex;
+  margin: 0;
+  position: relative;
+  a {
+    color: $blue;
+  }
+  @media (max-width: $mobile) {
+    align-items: start;
+  }
+}
+._checkbox-wallet {
+  display: none;
+}
+._fake-wallet {
+  display: inline-block;
+  flex: 0 0 18px;
+  height: 18px;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  border: 1.5px solid rgb(170, 177, 183);
+  &:hover {
+    border: 1.5px solid $accent;
+  }
+
+  &.errore {
+    border: 1.5px solid #df5d5d;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    display: block;
+    background-color: $accent;
+    top: -0.5px;
+    left: -0.5px;
+    width: 105%;
+    height: 105%;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    background-image: url("../img/input-checkbox.svg");
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 9px;
+    opacity: 0;
+  }
+}
+._checkbox-wallet:checked + ._fake-wallet::before {
+  opacity: 1;
+}
+._checkbox-wallet:checked + ._fake-wallet::after {
+  opacity: 1;
+}
+._checkbox-wallet:checked + ._fake-wallet {
+  border: 1.5px solid $accent;
+}
+._wallet-chectext {
+  margin-left: 7px;
+  font-size: 14px;
+  text-align: left;
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
