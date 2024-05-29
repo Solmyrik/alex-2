@@ -1,5 +1,5 @@
 .catalog {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   &__container {
   }
 
@@ -15,6 +15,7 @@
 
   &__item {
     flex: 0 1 calc(50% - 13px);
+    border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s;
 
@@ -40,6 +41,7 @@
   &__image {
     img {
       width: 100%;
+      border-radius: 10px 10px 0px 0px;
     }
     position: relative;
     &::before {
@@ -58,6 +60,7 @@
   &__content {
     background-color: $white;
     padding: 20px 15px 25px 15px;
+    border-radius: 0px 0px 10px 10px;
   }
 
   &__name {

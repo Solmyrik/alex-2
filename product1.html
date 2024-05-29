@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>ГЛОБАЛТЕХТРЭЙД</title>
+    <title>QINGQI GKS38</title>
     <link rel="stylesheet" href="css/style2.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/product.js"></script>
     <script defer src="js/header.js"></script>
   </head>
   <body>
@@ -146,10 +148,12 @@
                 <a href="index.html" class="body-header__logo">
                   <img src="img/logo2.svg" alt="logo" />
                 </a>
-
                 <nav class="body-header__menu menu">
                   <div class="menu__body">
                     <ul class="menu__list">
+                      <li class="menu__item">
+                        <a href="/index.html" class="menu__link">Главная</a>
+                      </li>
                       <li class="menu__item">
                         <a href="#catalog" class="menu__link">Каталог</a>
                       </li>
@@ -197,184 +201,166 @@
         </div>
       </header>
       <main class="page">
-        <section class="intro">
-          <div class="intro__container">
-            <div class="intro__left">
-              <img src="img/main/1.jpg" alt="bg" />
-            </div>
-            <div class="intro__right">
-              <h1 class="intro__title _h2">Компания ООО ГЛОБАЛТЕХТРЭЙД</h1>
-              <nav>
-                <ul class="intro__nav">
-                  <li class="_par">Продажа спецтехники из наличия и на заказ</li>
-                  <li class="_par">Помощь в оформлении лизинга</li>
-                  <li class="_par">Гарантийное и постгарантийное обслуживание</li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </section>
-        <section id="catalog" class="catalog">
-          <div class="catalog__container">
-            <h2 class="catalog__title _h2">Каталог</h2>
-            <div class="catalog__body">
-              <article class="catalog__item">
-                <div class="catalog__top">
-                  <div class="catalog__image">
-                    <img src="img/catalog/1/2.jpeg" alt="car" />
+        <section class="product">
+          <div class="product__container">
+            <h2 class="product__title _h2">QINGQI GKS38</h2>
+            <p class="catalog__type">Aвтогидроподъёмник</p>
+            <div class="product__top">
+              <div class="product__slider product__slider-1">
+                <div class="product__wrapper swiper-wrapper">
+                  <div class="product__slide swiper-slide">
+                    <img src="img/catalog/1/1.jpeg" alt="QINGQI" />
+                  </div>
+                  <div class="product__slide swiper-slide">
+                    <img src="img/catalog/1/2.jpeg" alt="QINGQI" />
+                  </div>
+                  <div class="product__slide swiper-slide">
+                    <img class="product__vertical" src="img/catalog/1/3.jpeg" alt="QINGQI" />
+                  </div>
+                  <div class="product__slide swiper-slide">
+                    <img class="product__vertical" src="img/catalog/1/4.jpeg" alt="QINGQI" />
+                  </div>
+                  <div class="product__slide swiper-slide">
+                    <img class="product__vertical" src="img/catalog/1/5.jpeg" alt="QINGQI" />
                   </div>
                 </div>
-                <div class="catalog__content">
-                  <div class="catalog__top">
-                    <div>
-                      <h3 class="catalog__name">QINGQI GKS38</h3>
-                      <p class="catalog__type">Aвтогидроподъёмник</p>
-                    </div>
-                    <div class="catalog__values">
-                      <div class="catalog__value">
-                        <p>Год Выпуска:</p>
-                        <span>2008</span>
-                      </div>
-                      <div class="catalog__value">
-                        <p>Пробег:</p>
-                        <span>20 000 км</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="catalog__bottom">
-                    <div class="catalog__price">От 2 000 000 ₽</div>
-                    <a href="product1.html" class="catalog__button _btn">подробнее</a>
-                  </div>
+                <div class="product__arrow_next">
+                  <?xml version="1.0" ?><svg
+                    class="feather feather-chevron-right"
+                    fill="none"
+                    height="24"
+                    stroke="#ffffff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polyline points="9 18 15 12 9 6" />
+                  </svg>
                 </div>
-              </article>
-              <article class="catalog__item">
-                <div class="catalog__top">
-                  <div class="catalog__image">
-                    <img src="img/catalog/1/2.jpeg" alt="car" />
-                  </div>
+                <div class="product__arrow_prev">
+                  <?xml version="1.0" ?><svg
+                    class="feather feather-chevron-right"
+                    fill="none"
+                    height="24"
+                    stroke="#ffffff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <polyline points="9 18 15 12 9 6" />
+                  </svg>
                 </div>
-                <div class="catalog__content">
-                  <div class="catalog__top">
-                    <div>
-                      <h3 class="catalog__name">QINGQI GKS38</h3>
-                      <p class="catalog__type">Aвтогидроподъёмник</p>
-                    </div>
-                    <div class="catalog__values">
-                      <div class="catalog__value">
-                        <p>Год Выпуска:</p>
-                        <span>2008</span>
-                      </div>
-                      <div class="catalog__value">
-                        <p>Пробег:</p>
-                        <span>20 000 км</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="catalog__bottom">
-                    <div class="catalog__price">От 2 000 000 ₽</div>
-                    <a href="product1.html" class="catalog__button _btn">подробнее</a>
-                  </div>
-                </div>
-              </article>
-              <article class="catalog__item">
-                <div class="catalog__top">
-                  <div class="catalog__image">
-                    <img src="img/catalog/1/2.jpeg" alt="car" />
-                  </div>
-                </div>
-                <div class="catalog__content">
-                  <div class="catalog__top">
-                    <div>
-                      <h3 class="catalog__name">QINGQI GKS38</h3>
-                      <p class="catalog__type">Aвтогидроподъёмник</p>
-                    </div>
-                    <div class="catalog__values">
-                      <div class="catalog__value">
-                        <p>Год Выпуска:</p>
-                        <span>2008</span>
-                      </div>
-                      <div class="catalog__value">
-                        <p>Пробег:</p>
-                        <span>20 000 км</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="catalog__bottom">
-                    <div class="catalog__price">От 2 000 000 ₽</div>
-                    <a href="product1.html" class="catalog__button _btn">подробнее</a>
-                  </div>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-        <section id="about" class="about">
-          <div class="about__container">
-            <div class="about__wrapper">
-              <div class="about__left">
-                <h2 class="about__title _h2">О компании</h2>
               </div>
-              <div class="about__body">
-                <article class="about__item">
-                  <div class="about__icon">
-                    <img src="img/about/1.png" alt="about-icon" />
+              <div class="product__sidebar">
+                <div class="product__sidebar-wrapper">
+                  <div class="product__price">От 2 000 000 ₽</div>
+                  <a href="" class="_btn">Позвонить</a>
+                  <a href="" class="_btn _secondary">Написать в телеграм</a>
+                </div>
+              </div>
+            </div>
+            <div class="product__body">
+              <h3 class="_h3">Описание</h3>
+              <div class="product__description _par">
+                <p>
+                  При производстве автогидроподъемника (АГП) марки QINGQI использованы только самые
+                  качественные материалы и передовое оборудование. Сталь от поставщика BAOSTEEL,
+                  марки 700 и 900.
+                </p>
+                <p>
+                  Вся спецтехника проходит контроль качества, а также динамические и статистические
+                  испытания на нагрузку согласно Федеральных норм и правил по подъемным сооружениям
+                  (116 -ФЗ РФ). На АГП установлена современная система безопасности и дистанционное
+                  управление, которая обеспечивает полноценную безопасность работ, и соответствует
+                  всем требования Ростехнадзора.
+                </p>
+                <p>
+                  Неоспоримым преимуществом является внушительная грузоподъемность подъемной
+                  платформы(люльки) в 400 кг, а также возможные конфигурация люльки- которая
+                  позволяет работать в транспортном и разложенном(балкон) положениях.
+                </p>
+              </div>
+              <div class="product__line"></div>
+              <h3 class="_h3">Основный технические характеристики</h3>
+              <div class="product__table">
+                <div class="product__row">
+                  <div class="product__name">Предприятие - изготовитель</div>
+                  <div class="product__value">Qingdao Qingqi Special Vehicle Sales Co., Ltd</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Тип подъемника</div>
+                  <div class="product__value">автомобильный гидравлический</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Назначение подъемника</div>
+                  <div class="product__value">
+                    подъем на высоту 38,0 м. два рабочих для производства ремонтных,
+                    строительно-монтажных работ или 400 кг
                   </div>
-                  <h3 class="about__name _h4">Опыт в сфере эксплуатации.</h3>
-                  <p class="about__description _par">
-                    Торговая компания ГЛОБАЛТЕХТРЭЙД основана опираясь на огромный опыт в бизнесе по
-                    аренде спецтехники. Мы действительно отлично разбираемся и понимаем, какая
-                    должна быть спецтехника для Российского потребителя. Потому что сами являемся
-                    эксплуатантами спецтехники корейского и китайского производства.
-                  </p>
-                </article>
-                <article class="about__item">
-                  <div class="about__icon">
-                    <img src="img/about/2.png" alt="about-icon" />
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Конструкция ходовой части:</div>
+                  <div class="product__value">автомобильное шасси</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Марка, модель:</div>
+                  <div class="product__value">ISUZU/ QL1180JQFRY</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Модель двигателя:</div>
+                  <div class="product__value">4HK1-TCG60</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Объем двигателя (куб. см.):</div>
+                  <div class="product__value">5193</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Мощность двигателя(кВт):</div>
+                  <div class="product__value">150</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Макс. Разрешённая масса:</div>
+                  <div class="product__value">16000</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">
+                    Окружающая среда, в которой может эксплуатироваться подъемник: температура
+                    рабочего состояния:
                   </div>
-                  <h3 class="about__name _h4">Опыт в ремонте и обслуживании.</h3>
-                  <p class="about__description _par">
-                    Вся техника, которая нами эксплуатируемся, проходит облуживание на собственных
-                    технических мощностях.
-                  </p>
-                </article>
-                <article class="about__item">
-                  <div class="about__icon">
-                    <img src="img/about/3.png" alt="about-icon" />
+                  <div class="product__value">
+                    наибольшая, °С : +40 <br />
+                    наименьшая, °С : - 40
                   </div>
-                  <h3 class="about__name _h4">
-                    Опыт в техническом переоснащении и переоборудование спецтехники
-                  </h3>
-                  <p class="about__description _par">
-                    Обладаем огромным опытом в установке автогидроподъемников, кранов-манипуляторов
-                    на шасси и последующим проведением доработки, дооснащения и переоборудования.
-                  </p>
-                </article>
-                <article class="about__item about__item_m">
-                  <div class="about__icon">
-                    <img src="img/about/4.png" alt="about-icon" />
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Посты управления:</div>
+                  <div class="product__value">
+                    Беспроводной пульт дистанционного управления / кабина машиниста / Блок
+                    управления снизу
                   </div>
-                  <h3 class="about__name _h4">Официальные представители завода-изготовителя.</h3>
-                  <p class="about__description _par">
-                    Мы являемся официальными представителями завода и имеем постоянную техническую и
-                    информационную поддержку от инженеров завода-производителя.
-                  </p>
-                </article>
-                <article class="about__item">
-                  <div class="about__icon">
-                    <img src="img/about/5.png" alt="about-icon" />
-                  </div>
-                  <h3 class="about__name _h4">
-                    Опыт в эксплуатации опасных производственных объектов.
-                  </h3>
-                  <p class="about__description _par">
-                    Являемся опытными эксплуатантами опасных производственных объектов 4 класса.
-                    Отлично знаем какими характеристиками по безопасности должна обладать
-                    спецтехника, чтобы отвечать требованиям Ростехнадзора.
-                  </p>
-                </article>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Общая длина, мм.:</div>
+                  <div class="product__value">8220</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Общая ширина, мм.:</div>
+                  <div class="product__value">2520</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Общая высота, мм.:</div>
+                  <div class="product__value">3880</div>
+                </div>
+                <div class="product__row">
+                  <div class="product__name">Общая масса, кг.:</div>
+                  <div class="product__value">15805</div>
+                </div>
               </div>
             </div>
           </div>

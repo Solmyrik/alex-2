@@ -17,3 +17,14 @@ if (headerPhone) {
     headerPhoneMenu.classList.toggle("active");
   });
 }
+
+const menuLinks = document.querySelectorAll(".mob-menu__link");
+
+menuLinks.forEach((item) => {
+  item.addEventListener("click", (e) => {
+    headerPhoneMenu.classList.remove("active");
+    document.body.classList.remove("_lock");
+    iconMenu.classList.remove("active");
+    menuBody.classList.remove("active");
+  });
+});
