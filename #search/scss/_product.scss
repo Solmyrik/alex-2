@@ -181,6 +181,9 @@
   &__row {
     display: flex;
     gap: 30px;
+    @media (max-width: 390px) {
+      font-size: 14px;
+    }
   }
 
   &__name {
