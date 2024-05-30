@@ -17,3 +17,12 @@ const cardsSlider1 = new Swiper(".product__slider-1", {
   },
   autoplay: false,
 });
+
+const productImages = document.querySelectorAll(".product__slide img");
+productImages.forEach((img) => {
+  img.addEventListener("load", () => {
+    if (img.naturalHeight > img.naturalWidth) {
+      img.classList.add("product__vertical");
+    }
+  });
+});

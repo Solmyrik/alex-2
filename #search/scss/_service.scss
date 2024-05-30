@@ -1,0 +1,15 @@
+.service {
+  margin-bottom: 70px;
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 50px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}

@@ -153,7 +153,8 @@
   }
   &__wrapper {
     padding: 26px 30px;
-    height: 68px;
+    height: 88px;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,7 +175,7 @@
 
   &__logo {
     img {
-      width: 128px;
+      width: 158px;
     }
     @media (max-width: $mobile) {
     }
@@ -257,7 +258,7 @@
     position: relative;
     cursor: pointer;
     font-family: "Inter";
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     color: $black;
     display: flex;

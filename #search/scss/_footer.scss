@@ -1,0 +1,126 @@
+.footer {
+  background-color: $light;
+  margin-top: 90px;
+  padding-bottom: 30px;
+  &__container {
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  &__column {
+    max-width: 250px;
+  }
+
+  &__logo {
+    height: 120px;
+    overflow: hidden;
+    display: block;
+    img {
+      width: 158px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__item {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    //  color: $gray-bg;
+    font-family: "Made";
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    transition: all 0.3s;
+    &:hover {
+      color: $accent;
+    }
+    &_s {
+      // color: $gray-bg;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &_n {
+      // color: $gray-bg;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+
+  &__text {
+  }
+
+  &__title {
+  }
+
+  &__menu {
+    padding-top: 55px;
+    @media (max-width: $mobile) {
+      padding-top: 30px;
+    }
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__copy {
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
+  }
+  .top-header__menu {
+    @media (max-width: $mobile) {
+      display: flex;
+    }
+  }
+}
+
+.top-header {
+  &__menu {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
